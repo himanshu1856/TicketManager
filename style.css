@@ -1,21 +1,21 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #243763;
 }
 
-.title{
+.title {
     text-align: center;
     margin: 1rem;
     color: beige;
     font-family: 'Shadows Into Light', cursive;
 }
 
-.header{
+.header {
     margin: 1rem;
     background-color: #B2B2B2;
     display: flex;
@@ -23,11 +23,13 @@ body{
     height: 10vh;
     border-radius: 1rem;
 }
-.ticket-filter{
+
+.tickets-filter {
     display: flex;
     margin: auto 2rem;
 }
-.filter{
+
+.filter {
     height: 3rem;
     width: 3rem;
     margin: .5rem;
@@ -36,55 +38,108 @@ body{
     opacity: .5;
     transition: transform .5s;
 }
-.filter:hover{
+
+.filter:hover {
     opacity: 1;
     transform: scale(1.2);
 }
-.red{
+
+.red {
     background-color: #E0144C;
-    
 }
-.green{
+
+.green {
     background-color: #7D8F69;
 }
-.blue{
+
+.blue {
     background-color: #91D8E4;
 }
-.pink{
+
+.pink {
     background-color: #F7A4A4;
 }
-.default{
+
+.default {
     background-color: #EAEAEA;
 }
-.ticket-actions{
+
+.ticket-actions {
     display: flex;
     margin: auto 2rem;
 }
-.ticket-actions div{
+
+.ticket-actions div {
     height: 3rem;
     width: 3rem;
     margin: 1rem;
     border-radius: 50%;
     text-align: center;
     transition: transform .5sec;
-   
 }
-.ticket-actions div:hover{
+
+.ticket-actions div:hover {
     border-radius: 50%;
     transform: scale(1.2);
 }
-.ticket-actions i{
+
+.ticket-actions i {
     font-size: 2rem;
     text-align: center;
     margin-top: .4rem;
     transition: transform .5s;
 }
-.ticket-actions i:hover{
+
+.ticket-actions i:hover {
     transform: scale(1.2);
 }
-.ticket-container{
-    
+
+.ticket-container {
     height: 73vh;
     margin: 1rem;
     border-radius: 1rem;
+}
+
+.ticket-modal {
+    height: 15rem;
+    width: 30rem;
+    position: absolute;
+    top: 45%;
+    left: 37rem;
+    display: flex;
+}
+
+.ticket-text {
+    height: 100%;
+    width: 70%;
+    background-color: #B2B2B2;
+    padding: .5rem;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    overflow: auto;
+}
+
+.ticket-filters {
+    height: 100%;
+    width: 25%;
+    background-color: #243763;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ticket-filter {
+    height: 2rem;
+    width: 5rem;
+    opacity: .6;
+}
+.ticket-filter:hover {
+    opacity: 1;
+}
+
+.selected-filter {
+    opacity: 1;
+    border: 3px solid white;
 }
